@@ -3,7 +3,7 @@
 
 // ── Weekly-Tracker widget ──────────────────────────────────────────────────────
 // Reads the Weekly-Tracker's data straight from this origin's localStorage. Both
-// sites are served from willshaper.github.io, so they share one store. Read-only:
+// sites are served from the same github.io address, so they share one store. Read-only:
 // the widget never writes TRACKER_KEY, so it can't corrupt the tracker.
 let trackerTimer = null, trackFetchTimer = null;
 function readTrackerEntries() {

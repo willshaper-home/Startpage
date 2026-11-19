@@ -2,7 +2,7 @@
 // Classic script sharing globals with the others; load order is set in index.html.
 
 const STORAGE_KEY = 'startpage_v1';
-const TRACKER_URL = 'https://willshaper.github.io/Weekly-Tracker/';   // the standalone Weekly-Tracker site
+const TRACKER_URL = '../Weekly-Tracker/';   // the standalone Weekly-Tracker site, beside this one on the same address
 const TILE_COLS_MIN = 4, TILE_COLS_MAX = 40;   // tiles-per-line slider bounds (max fills a 4K row of compact tiles)
 const clampCols = v => Math.max(TILE_COLS_MIN, Math.min(TILE_COLS_MAX, Math.round(Number(v) || 8)));
 const FORCE_LETTER = 'letter';   // sentinel for link.icon: always show the coloured letter, never a favicon
@@ -44,7 +44,7 @@ const WIDGET_KEYS = ['rss','note','weather','countdown','tracker','anime'];
 // Anime feed: AniList media formats + origin countries the user can toggle
 const ANIME_FORMATS   = ['TV','TV_SHORT','MOVIE','SPECIAL','OVA','ONA','MUSIC'];
 const ANIME_COUNTRIES = ['JP','CN','KR'];
-// Weekly-Tracker (willshaper.github.io/Weekly-Tracker) shares this origin's
+// Weekly-Tracker (../Weekly-Tracker/, same github.io address) shares this origin's
 // localStorage, so the tracker widget reads its data straight from this key.
 const TRACKER_KEY = 'weekly_tracker';
 const TRACKER_COLORS = { '1':'#e05555', '2':'#e89440', '3':'#4db87a', '4':'#4a9ee8', '5':'#9b6bd4' };
